@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/card.css">
+    <link rel="stylesheet" href="styles/basket.css">
+    <link rel="stylesheet" href="styles/basket_cart.css">
+
+
+    <title>Panier</title>
+</head>
+<!-- id="btn-connect"> -->
+
+<body>
+    <header>
+        <img src="img/logo.png" alt="CSSV & co" class="logo"/>
+        <button type="button" id="icon">
+            <img src="img/burger.png" alt="icon burger">
+        </button>
+        <nav>
+            <div class="topnav">
+                <a href="index.html">Accueil</a>
+                <a href="catalogue.html">Catalogue</a>
+                <a href="connexion.html" id="btn-connect">Connexion</a>
+                <a href="panier.html">
+                    <div class="cart_content">
+                        <img src="./img/cart_arrow_down_icon.svg" alt="" />
+                        <span class="qty_label">0</span>
+                        <div class="cart_box">
+                            <p class="box_header">Cart</p>
+                            <div class="pro_content">
+                                <div id="1" class="catalog-item" data-category="asus" data-price="price-low">
+                                    <div class="product-name">Asus Vivobook 15</div>
+                                    <div class="product-img"><img src="img/1.jpg" alt="Asus Vivobook 15"></div>
+                                    <div class="product-desc">
+                                        <p>Découvrez des couleurs à votre image Reflétant l'audace de la jeunesse, le
+                                            ASUS Vivobook vous aide à exprimer votre vraie nature. Doté de performances
+                                            de pointe, d'une charnière ErgoLift innovante et d'un écran NanoEdge, il
+                                            vous permet d'abattre quantité de travail.</p>
+                                    </div>
+                                    <div class="product-price">
+                                        <div>Prix : </div>
+                                        <div>469€</div>
+                                    </div>
+                                </div>
+                                <!-- <img src="/images/image-product-1-thumbnail.jpg" alt="" />
+                        <div class="p_details">
+                          <p class="pro_txt">ll Limited Edition Sneakers</p>
+                          <p class="price">
+                            $125.00 <span>x</span><span class="times"> 3</span>
+                            <span class="total">$375</span>
+                          </p>
+                        </div>
+                        <div class="trash">
+                          <img src="/images/icon-delete.svg" alt="" class="trash_img" />
+                        </div> -->
+                            </div>
+                            <div class="cart_empty">
+                                <p>Your cart is empty :)</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </nav>
+        <!-- barre de navigation mobile -->
+    </header>
+    <main>
+        <div id="loginForm">
+        </div>
+        <aside class="basket">
+            <div class="basket_header">
+                <h2> Mon panier </h2>
+
+            </div>
+
+            <section class="basket_rows">
+                <ul>
+
+                </ul>
+            </section>
+            <!-- <div class="basket_price">
+                <h3 id="cart-total-price"></h3>
+            </div> -->
+            <div class="basket_footer">
+                <button class="btn basket-btn" id="btnContAchat">Continuer mes achats</button>
+                <button class="btn basket-btn" id="btnValidCart">Je passe au paiement</button>
+            </div>
+        </aside>
+    </main>
+    <script type="module" src="./scripts/product.js"></script>
+    <script type="module" src="./scripts/basket.js"></script>
+    <script type="module" src="./scripts/connect.js"></script>
+
+    <footer>
+
+    </footer>
+</body>
+
+</html>

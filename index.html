@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carousel Example</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/caroussel.css">
+    <link rel="stylesheet" href="styles/connect.css">
+    <link rel="stylesheet" href="styles/slider.css">
+    <link rel="stylesheet" href="styles/section.css">
+
+</head>
+<body>
+    <header>
+        <img src="img/logo.png" alt="CSSV & co" class="logo"/>
+        <button type="button" id="icon">
+            <img src="img/burger.png" alt="icon burger">
+            
+        </button>
+        <nav>
+            <div class="topnav">
+
+                <a href="#" class="active">Accueil</a>
+                <a href="catalogue.html">Catalogue</a>
+                <a href="connexion.html">Connexion</a>
+                <a href="panier.html">
+                    <div class="cart_content">
+                        <img src="./img/cart_arrow_down_icon.svg" alt="" />
+                        <span class="qty_label">0</span>
+                        <div class="cart_box">
+                            <p class="box_header">Cart</p>
+                            <div class="pro_content">
+                                <div id="1" class="catalog-item" data-category="asus" data-price="price-low">
+                                    <div class="product-name">Asus Vivobook 15</div>
+                                    <div class="product-img"><img src="img/1.jpg" alt="Asus Vivobook 15"></div>
+                                    <div class="product-desc">
+                                        <p>Découvrez des couleurs à votre image Reflétant l'audace de la jeunesse, le
+                                            ASUS Vivobook vous aide à exprimer votre vraie nature. Doté de performances
+                                            de pointe, d'une charnière ErgoLift innovante et d'un écran NanoEdge, il
+                                            vous permet d'abattre quantité de travail.</p>
+                                    </div>
+                                    <div class="product-price">
+                                        <div>Prix : </div>
+                                        <div>469€</div>
+                                    </div>
+                                </div>
+                                <!-- <img src="/images/image-product-1-thumbnail.jpg" alt="" />
+                        <div class="p_details">
+                          <p class="pro_txt">ll Limited Edition Sneakers</p>
+                          <p class="price">
+                            $125.00 <span>x</span><span class="times"> 3</span>
+                            <span class="total">$375</span>
+                          </p>
+                        </div>
+                        <div class="trash">
+                          <img src="/images/icon-delete.svg" alt="" class="trash_img" />
+                        </div> -->
+                            </div>
+                            <div class="cart_empty">
+                                <p>Your cart is empty :</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </nav>
+        <!-- barre de navigation mobile -->
+    </header>
+    <div class="contenu_carou_auto">
+        <div class="caroussel-image" onmouseover="this.style.animationPlayState = 'paused'" onmouseout="this.style.animationPlayState = 'running'">
+        </div>
+    </div>
+    <hr>
+    <section class="about">
+        <h2>Notre équipe</h2>
+        <div class="content">
+            <img src="/img/1.jpg" class="Teampic" alt="">
+            <article class="Us">
+                <p  >
+                    
+                    Permettez-nous de vous présenter le futur de la technologie durable : notre ordinateur portable végan. Conçu pour ceux qui sont conscients de leur impact environnemental et qui ne veulent pas compromettre la performance pour la planète.
+                    
+                    Éco-conçu, cet ordinateur est une révolution dans l’industrie technologique. Avec un châssis élégant fabriqué à partir de bois durablement récolté, chaque pièce est aussi unique que les empreintes de la nature elle-même.
+                    
+                    L’engagement envers l’environnement se poursuit avec nos touches de clavier en papier recyclé, offrant une sensation tactile douce et une durabilité surprenante. Et pour une touche finale, notre écran est encadré de coton biologique, assurant non seulement un look moderne mais aussi une prise en main confortable.
+                    
+                    Cet ordinateur n’est pas seulement un appareil, c’est une déclaration. Une déclaration que vous n’avez pas à choisir entre technologie et durabilité. Avec notre ordinateur portable végan, vous avez les deux.
+                    
+                    Rejoignez-nous dans cette révolution verte et faites le choix d’un avenir plus propre, plus brillant et plus responsable.
+                    
+                    J’espère que ce discours vous aidera à captiver votre public et à mettre en valeur votre produit innovant !
+                </p>
+            </article>
+        </div>
+    </section>
+    <section class="about">
+        <h2>PROMOTIONS</h2>
+     <div class="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="img/1.jpg" alt="Image 1">
+            </div>
+            <div class="carousel-item">
+                <img src="img/2.jpg" alt="Image 2">
+            </div>
+            <div class="carousel-item">
+                <img src="img/3.png" alt="Image 3">
+            </div>
+
+            <div class="carousel-item active">
+              <img src="img/4.jpg" alt="Image 4">
+          </div>
+          <div class="carousel-item">
+              <img src="img/5.jpg" alt="Image 5">
+          </div>
+          <div class="carousel-item">
+              <img src="img/6.jpg" alt="Image 6">
+          </div>
+        </div>
+    
+        <button class="carousel-control prev" onclick="prevSlide()">&#10094;</button>
+        <button class="carousel-control next" onclick="nextSlide()">&#10095;</button>
+    </div>
+</section>
+    <script src="test.js">
+       
+    </script>
+    <footer>
+
+    </footer>
+    <script src="/scripts/product.js"></script>
+    <script src="/scripts/slider.js"></script>
+    <script src="scripts/projet.js"></script>
+    <script src="./scripts/connect.js"></script>
+</body>
+</html>

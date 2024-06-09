@@ -1,0 +1,34 @@
+.basket {
+  margin-left: 10%;
+  margin-right: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+
+
+  height: 800px;
+
+}
+
+/*
+.basket_header {
+  background-color: rgb(187, 255, 171);
+}
+
+.basket_rows {
+  background-color: rgb(214, 130, 52);
+
+}
+
+*/
+.basket_price {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.basket_footer {
+  /*background-color: rgb(187, 255, 171);*/
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}

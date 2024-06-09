@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+header,footer{
+   
+    display: flex;
+    background-color: #e6e6e6;
+}
+
+header {
+    min-height: 60px;
+    justify-content:space-between;
+    /*justify-content:flex-end;*/
+    align-items: center;
+    box-shadow: 0 1px 8px #ddd;
+    padding-top: 10px;
+}
+.logo
+{
+   
+    width: 70px;
+  }
+
+
+footer{
+    height: 60px;
+    justify-content:space-between;
+    box-shadow: 0 -1px 8px #ddd;
+}
+
+main{
+    min-height: calc(100vh - 120px);
+}
+
+.main-container{
+    display: flex;
+    justify-content: center;
+}
+
+/***********************************************/
+/****************  TOP-NAV  ********************/
+/***********************************************/
+.topnav {
+    background-color: #e6e6e6;
+    overflow: hidden;
+}
+
+.topnav a {
+    float: left;
+    display: block;
+    color: #011107;
+    text-align: center;
+    padding: 20px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnav a:hover {
+    background-color: #29392b;
+    color: #e6e6e6;
+    font-style: bold;
+}
+
+.topnav a.active {
+    background-color: #7A9E7E;
+    color: #e6e6e6;
+}
+
+/***********************************************/
+/*****************  BURGER  ********************/
+/***********************************************/
+#icon {
+    display: none;
+}
+
+/***********************************************/
+/****************  BUTTON  ********************/
+/***********************************************/
+.btn{
+    
+    padding: 10px 20px;
+    background-color: #e6e6e6;
+    min-width: 145px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    display : flex;
+}
+
+.btn:hover {
+    background-color: #7A9E7E;
+    color :white;
+}
+
+/***********************************************/
+/**************  RESPONSIVE  *******************/
+/***********************************************/
+@media screen and (max-width: 600px) {
+    div.topnav {
+        display: none;
+    }
+    #icon {
+        float: right;
+        display: block;
+    }
+    .main-container #catalog{
+        border: none;
+        box-shadow: none;
+    }
+}
+
+.cart_content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 40px;
+    max-height: 40px;
+  }
+  .cart_content img {
+    cursor: pointer;
+    position: relative;
+    max-width: 100%;
+    max-height: 100%;
+  }
+  .qty_label {
+    position: absolute;
+    top: -5px;
+    right: 0;
+    background-color: var(--Orange);
+    color: red;
+    padding: 02px 7px;
+    border-radius: 10px;
+  }
+
+  

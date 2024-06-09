@@ -1,0 +1,157 @@
+.tableau {
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+
+}
+
+.cols {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  background-color: rgb(129, 139, 132);
+
+  max-height: 100px;
+  min-height: 100px;
+  margin-top: 2px;
+  margin-bottom: 2px;
+  padding: 5px;
+}
+
+.fooCols {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  background-color: rgb(211, 225, 215);
+
+  max-height: 90px;
+  min-height: 90px;
+  margin-top: 2px;
+  margin-bottom: 2px;
+  padding: 5px;
+}
+
+.fooReduc {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  background-color: rgb(127, 240, 159);
+
+  max-height: 50px;
+  min-height: 50px;
+  margin-top: 2px;
+  margin-bottom: 2px;
+  padding: 5px;
+}
+
+
+.col1 {
+  /*display: flex;*/
+  /*border-style: outset;*/
+  height: auto !important;
+  width: 300px;
+  text-align: center;
+}
+
+.col1>img {
+  max-width: 100%;
+  max-height: 100%;
+  padding: 5px;
+  height: auto;
+}
+
+.col2 {
+  /*border-style: outset;*/
+
+  /*background-color: aqua;*/
+  display: inline-block;
+  text-wrap: wrap;
+
+  width: 60%;
+}
+
+
+.col2>span {
+  border-radius: 5px;
+  padding: 20px 60px;
+  font-size: 20px;
+
+}
+
+@media only screen and (max-width: 600px) {
+  .col2>span {
+    font-size: 12px;
+  }
+}
+
+.col3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  /*background-color: blueviolet;*/
+}
+
+
+
+.col3.qt>span>p {
+  color: rgb(57, 148, 5);
+}
+
+.col3>button {
+  width: 25px;
+  height: 25px;
+
+}
+
+/* 
+.col3>button:hover {
+  background-color: #f5a00c94;
+} */
+
+.cart-Col-qt {
+  width: 40px;
+
+}
+
+.col4 {
+  /*border-style: outset;*/
+
+  text-align: right;
+  /*background-color: aqua;*/
+  /*display: inline-block;*/
+  width: 100px;
+
+  align-content: center;
+}
+
+
+.Col_LabTotal {
+  text-align: right;
+  align-content: center;
+  font-size: large;
+  width: 200px;
+  font-weight: bold;
+
+}
+
+@media only screen and (max-width: 600px) {
+  .Col_LabTotal {
+    font-size: 12px;
+  }
+}
+
+.Col_TotalPrice {
+  text-align: right;
+
+  width: 100px;
+  align-content: center;
+  color: rgb(252, 8, 8);
+
+}
+
+.col4>span {
+  font-weight: bold;
+  color: rgb(252, 8, 8);
+}
